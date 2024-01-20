@@ -22,7 +22,6 @@ from utils import EarlyStopMonitor, RandEdgeSampler
 
 
 
-
 # import warnings
 # def my_formatwarning(message, category, filename, lineno, line=None):
 #   print(message, category)
@@ -235,10 +234,11 @@ nn_test_rand_sampler = RandEdgeSampler(nn_test_src_l, nn_test_dst_l)
 
 
 ### Model initialize
-if torch.cuda.is_available():
-    device = torch.device('cuda:{}'.format(GPU))
-else:
-    device = torch.device('cpu')
+# if torch.cuda.is_available():
+#     device = torch.device('cuda:{}'.format(GPU))
+# else:
+#     device = torch.device('cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 tgan = TGAN(train_ngh_finder, n_feat, e_feat,
             num_layers=NUM_LAYER, use_time=USE_TIME, agg_method=AGG_METHOD, attn_mode=ATTN_MODE,
             n_head=NUM_HEADS, drop_out=DROP_OUT,
