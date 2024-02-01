@@ -82,10 +82,28 @@ class PGExplainerExt(BaseExplainerTG):
         else:
             raise NotImplementedError
 
+        # original mlp used in the paper: following structure with hidden unit = 128
+        # hidden_unit = 64
+        # print(f'hidden unit= {hidden_unit}')
+
+        # explainer_model = nn.Sequential(
+        #     nn.Linear(expl_input_dim, hidden_unit),
+        #     nn.ReLU(),
+        #     nn.Linear(hidden_unit, 1),  ##### version 1
+        #     # nn.Sigmoid(), ##### version 2
+        # )
+        # explainer_model = explainer_model.to(device)
+
+        # ours mlp: add a layer and change the numberof hidden units: 256 --> 128 
+        hidden_unit = 128
+        print(f'hidden unit= {hidden_unit}')
+
         explainer_model = nn.Sequential(
-            nn.Linear(expl_input_dim, 128),
+            nn.Linear(expl_input_dim, hidden_uni * 2),
             nn.ReLU(),
-            nn.Linear(128, 1),  ##### version 1
+            nn.Linear(hidden_unit * 2, hidden_unit),
+            nn.ReLU(),
+            nn.Linear(hidden_unit, 1),  ##### version 1
             # nn.Sigmoid(), ##### version 2
         )
         explainer_model = explainer_model.to(device)
