@@ -1,5 +1,7 @@
 # Fact_group_29: Reproducibility study of explaining temporal graph models through an explorer-navigator framework
 
+In this study, we replicated the main results in the paper: [Temporal Graph Networks for Deep Learning on Dynamic Graphs](https://arxiv.org/abs/2006.10637)
+
 ## Installation  
 
 The project is launched as a python library, to run the code in this project, we first need to install this library. Go to the path where the 'setup.py' is in, and do the installation with the following command:  
@@ -84,7 +86,7 @@ year={2020}
 
 Details in this README.md file:  
 
-1. Short introduction to the paper with the link: [Temporal Graph Networks for Deep Learning on Dynamic Graphs](https://arxiv.org/abs/2006.10637)
+1. Short introduction to the paper with the link
 
 2. Python environmental requirements:  
 
