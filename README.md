@@ -22,7 +22,7 @@ The overview of the steps can be find in the 'REAREADMEDME.md' in:
 To replicate the results of this project, three parts of the tasks should be performed: data process, training corresponding models and running the explainers.  
 This overview sample command of these three parts can be found in this 'README.md'. 
 
-However, more detailed guidance for training and running explainers are in incorporated in the 'README.md' in corresponding child-folders. Following sections put a index for the paths of these files:  
+However, more detailed guidance for training and running explainers are in incorporated in the 'README.md' in corresponding child-folders. Following sections aims to provide a clear step-by step guidance to run the code with the link to the path of these sub-README.md files.  
 
 ### Data process
 
