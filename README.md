@@ -2,7 +2,7 @@
 
 ## Installation  
 
-The project is wrapped as a python library, to run the code in this project, we first need to install this library. Go to the path where the 'setup.py' is in, and do the installation with the following command:  
+The project is launched as a python library, to run the code in this project, we first need to install this library. Go to the path where the 'setup.py' is in, and do the installation with the following command:  
 
 ```
 cd  ~/workspace/TGNNEXPLAINER-PUBLIC/
