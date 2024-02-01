@@ -150,7 +150,7 @@ cd  ~/workspace/TGNNEXPLAINER-PUBLIC/benchmarks/xgraph
 
 Worth notice here, the author put the exucution of four explainer in one 'run.sh' file. Regarding the long GPU time for the T-GNNExplainer, we recommend to run the T-GNNExplainer separatly (in parallel, we can run the other 3 explainers) to shorten the total time consumption. Also, it is recommend to assign the task with longer expected running time if the code is executed in a '.job' file.  
 
-As a reference, in our experiments, the longest time consumption to run the T-GNNExpainer is 25h (for reddit dataset), executed with the environment: 1 NVIDIA A100-SXM4-40GB GPU with 18 CPUs per task. 
+As a reference, in our experiments, the longest time consumption to run the T-GNNExpainer is 25h (for reddit dataset), executed with the environment: 1 NVIDIA A100-SXM4-40GB GPU with 18 CPUs. 
 
 
 
