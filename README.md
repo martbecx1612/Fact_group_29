@@ -156,7 +156,7 @@ As a reference, in our experiments, the longest time consumption to run the T-GN
 
 ## Experiments
 
-In this study, we replicated the results by training the TGAT and TGN model with 4 datasets respectively, and ran the 4 explainers to create a baseline results.  
+In this study, we replicated the results by training the TGAT and TGN model with 4 datasets respectively, and running the 4 explainers to create a baseline results.  
 
 To dive deeper, we modified the multi-layer perceptron (mlp) in the explainer, see the modifications in file:  
 
@@ -166,4 +166,6 @@ To dive deeper, we modified the multi-layer perceptron (mlp) in the explainer, s
 
 Originally in the paper, a 2 layer MLP with 128 hidden units is applied. We modified it to 3 layers with 256 hidden units in the first layer and 128 hidden units in the second layer respectively.  
 
-In the future study, it would be interesting to look into the structure of MLP. Variations such as change the hidden unit to 64 or 32 might be tested. With given time limits and computational power, these experiments are excluded in our study. 
+In the future study, it would be interesting to look into the structure of MLP and the impacts it gives to the model outcome and efficiency.  
+ 
+Variations such as change the hidden unit to 64 or 32 might be tested. With given time limit and computational power, these experiments are excluded in our study. 
