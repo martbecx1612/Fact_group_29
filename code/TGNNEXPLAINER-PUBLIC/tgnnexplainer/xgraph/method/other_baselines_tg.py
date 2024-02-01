@@ -99,7 +99,7 @@ class PGExplainerExt(BaseExplainerTG):
         print(f'hidden unit= {hidden_unit}')
 
         explainer_model = nn.Sequential(
-            nn.Linear(expl_input_dim, hidden_uni * 2),
+            nn.Linear(expl_input_dim, hidden_unit * 2),
             nn.ReLU(),
             nn.Linear(hidden_unit * 2, hidden_unit),
             nn.ReLU(),
