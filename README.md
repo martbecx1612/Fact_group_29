@@ -175,3 +175,10 @@ Variations such as change the hidden unit to 64 or 32 might be tested. With give
 ## Processing results
 
 To process the results, open the notebook in the processing_results folder and run the code inside it to generate the graphs and process benchmark scores. Make sure to put the resulting output files of the model in the processing_results/Results folder or change the loading directory inside the notebook itself. The folder processing_results/Results is already filled with the results from our runs.
+
+
+
+## Processing results
+
+To process the results, open the notebook in the processing_results folder and run the code inside it to generate the graphs and process benchmark scores. Make sure to put the resulting output files of the model in the processing_results/Results folder or change the loading directory inside the notebook itself. The folder processing_results/Results is already filled with the results from our runs.
+
