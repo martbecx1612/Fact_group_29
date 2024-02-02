@@ -171,3 +171,7 @@ Originally in the paper, a 2 layer MLP with 128 hidden units is applied. We modi
 In the future study, it would be interesting to look into the structure of MLP and the impacts it gives to the model outcome and efficiency.  
  
 Variations such as change the hidden unit to 64 or 32 might be tested. With given time limit and computational power, these experiments are excluded in our study. 
+
+## Processing results
+
+To process the results, open the notebook in the processing_results folder and run the code inside it to generate the graphs and process benchmark scores. Make sure to put the resulting output files of the model in the processing_results/Results folder or change the loading directory inside the notebook itself. The folder processing_results/Results is already filled with the results from our runs.
